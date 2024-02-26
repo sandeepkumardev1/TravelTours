@@ -1,95 +1,427 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="Script.js" type="Script"></script>
-    <link rel="Script" type="text/Script" href="Script.js">
-    <link rel="stylesheet" type="text/css" href="Style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Index</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <script src="Script.js" type="Script"></script>
+  <link rel="Script" type="text/Script" href="Script.js">
+  <link rel="stylesheet" type="text/css" href="Style.css">
+
 </head>
+
 <body class="img-fluid">
-    <!-- nav -->
-    <nav class="navbar navbar-expand-lg">
-        <a class="navbar-brand" href="#"><img src="travel-tour-logo.png" alt="Bordeaux" height="18px"/></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Book</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-               Packages
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="#">United States</a>
-                <a class="dropdown-item" href="#">India</a>
-                <a class="dropdown-item" href="#">France</a>
-                <a class="dropdown-item" href="#">Germany</a>
-              </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
+  <!-- nav -->
+  <nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="#"><img src="travel-tour-logo.png" alt="Bordeaux" height="18px" /></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Book</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Services</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Packages
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">United States</a>
+            <a class="dropdown-item" href="#">India</a>
+            <a class="dropdown-item" href="#">France</a>
+            <a class="dropdown-item" href="#">Germany</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About Us</a>
+        </li>
+      </ul>
+    </div>
+    <div class="form-inline">
+      <button class="btn btn-outline-success my-2 my-sm-0 NavBtn" type="submit">Sign in</button>
+      <div style="margin-left: 10px;"></div>
+      <button class="btn btn-outline-success my-2 my-sm-0 NavBtn" type="submit">Register</button>
+    </div>
+  </nav>
+  <!--  -->
+  <div class="container-fluid">
+    <div class="row">
+      <h1 class="col-md-12 Heading" id="rolling-text">Welcome to TravelGo</h1><br /><br />
+      <div class="col-md-12 subHeading">
+        Book for
+        <span id="word"></span>
+      </div>
+    </div>
+    <div class="row V-Gap"></div>
+    <div class="container">
+      <div class="row mainrow Border-Shadow">
+        <div class="col-md-6">
+          <img src="daniela-cuevas-t7YycgAoVSw-unsplash.jpg" class="Img" alt="IMG" />
+        </div>
+        <div class="col-md-6">
+          <form action="">
+            <div class="mb-3">
+              <input type="text" class="form-control" id="whereTo" name="whereTo" list="bookingPlaces"
+                placeholder="Where To" required="" fdprocessedid="b9ow1w">
+              <datalist id="bookingPlaces">
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+                <option value="Russia">Russia</option>
+                <option value="Bangkok">Bangkok</option>
+                <option value="Thailand">Thailand</option>
+                <option value="London">London</option>
+              </datalist>
+            </div>
+            <div class="mb-3">
+              <input type="number" class="form-control" id="howMany" name="howMany" placeholder="How Many" min="1"
+                required="" fdprocessedid="21pog">
+            </div>
+            <div class="mb-3">
+              <input type="date" class="form-control" id="fromDate" name="fromDate" placeholder="Start Date" required=""
+                min="2024-02-26">
+            </div>
+            <div class="mb-3">
+              <input type="date" class="form-control" id="toDate" name="toDate" onclick="getDate()"
+                placeholder="End Date" required="" disabled="">
+            </div>
+            <textarea class="form-control mb-3" id="exampleFormControlTextarea1" rows="3" maxlength="500" minlength="50"
+              placeholder="Enter your name &amp; details" style="resize: none" required=""></textarea>
+            <button class="bubble-btn">Book Now</button>
+          </form>
+        </div>
+      </div>
+
+
+      <div class="row" style="height: 30px;"></div>
+      <div class="row">
+        <div class="col-md-4 mt-2">
+          <div class="col-md-11 content">
+            <img
+            src="https://www.planetware.com/wpimages/2020/01/india-in-pictures-beautiful-places-to-photograph-taj-mahal.jpg"
+            alt="Img" class="img-fluid">
+            <div class="col-md-12">
+            <h4>
+              India
+            </h4>
+            <p>
+              India, a land of diversity, boasts rich cultural heritage.
+              From the majestic Himalayas to the serene backwaters of Kerala,
+              Its ancient civilizations coexist with modern technology,
+              As vibrant colors, flavors, and traditions weave its tapestry of life.
+            </p>
+            <i class="fa fa-star star-icon"></i>
+            <i class="fa fa-star star-icon"></i>
+            <i class="fa fa-star star-icon"></i>
+            <i class="fa fa-star star-icon"></i>
+            <i class="fa fa-star star-icon"></i><br>
+            <strong style="font-size: 20px;"><span>Price:</span><span style="color: goldenrod;font-weight: bold;">$750</span></strong><br>
+            <button class="bubble-btn">Book Now</button>
+          </div>
+          </div>
+
+        </div>
+        <div class="col-md-4 mt-2">
+<div class="col-md-11 content">
+            <img
+            src="https://www.state.gov/wp-content/uploads/2019/04/Japan-2107x1406.jpg"
+            alt="Img" class="img-fluid">
+            <div class="col-md-12">
+            <h4>
+              Japan
+            </h4>
+            <p>
+              Japan's technological prowess, cultural richness, and societal harmony define its global significance.
+               With innovations ranging from robotics to bullet trains, Japan remains a leader in advancing human progress.
+                Its deep-rooted traditions coexist with modernity.
+             
+            </p>
+            <i class="fa fa-star star-icon"></i>
+            <i class="fa fa-star star-icon"></i>
+            <i class="fa fa-star star-icon"></i>
+            <i class="fa fa-star star-icon"></i><br>
+            <strong style="font-size: 20px;"><span>Price:</span><span style="color: goldenrod;font-weight: bold;">$750</span></strong><br>
+            <button class="bubble-btn">Book Now</button>
+          </div>
+          </div>
+        </div>
+        <div class="col-md-4 mt-2">
+          <div class="col-md-11 content">
+            <img
+            src="https://a.cdn-hotels.com/gdcs/production133/d1829/743b2f60-bb25-11e8-a095-0242ac11000d.jpg?impolicy=fcrop&w=800&h=533&q=medium"
+            alt="Img" class="img-fluid">
+            <div class="col-md-12">
+            <h4>
+              Germany
+            </h4>
+            <p>
+          
+            Germany, a land of precision engineering and rich history, stands as an economic powerhouse in Europe.
+             From the bustling streets of Berlin to the picturesque Bavarian countryside, 
+             its landscapes offer a tapestry of natural beauty.
+            </p>
+            <i class="fa fa-star star-icon"></i>
+            <i class="fa fa-star star-icon"></i>
+            <i class="fa fa-star star-icon"></i><br>
+            <strong style="font-size: 20px;"><span>Price:</span><span style="color: goldenrod;font-weight: bold;">$750</span></strong><br>
+            <button class="bubble-btn">Book Now</button>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 20px;"></div>
+      <div class="row">
+        <div class="col-md-4 mt-2">
+          <div class="col-md-11 content">
+            <img
+            src="https://images.pexels.com/photos/2916826/pexels-photo-2916826.jpeg?cs=srgb&dl=pexels-andre-furtado-2916826.jpg&fm=jpg"
+            alt="Img" class="img-fluid">
+            <div class="col-md-12">
+            <h4>
+              Canada
+            </h4>
+            <p>
+              Canada, a vast land of breathtaking wilderness and diverse cultures,
+               captivates with its natural wonders and welcoming spirit. 
+               From the rugged peaks of the Rockies to the pristine lakes of Ontario, its landscapes inspire awe. 
+            </p>
+            <i class="fa fa-star star-icon"></i>
+            <i class="fa fa-star star-icon"></i>
+            <i class="fa fa-star star-icon"></i>
+            <i class="fa fa-star star-icon"></i><br>
+            <strong style="font-size: 20px;"><span>Price:</span><span style="color: goldenrod;font-weight: bold;">$750</span></strong><br>
+            <button class="bubble-btn">Book Now</button>
+          </div>
+          </div>
+
+        </div>
+        <div class="col-md-4 mt-2">
+<div class="col-md-11 content">
+            <img
+            src="https://www.shutterstock.com/image-photo/pinkish-colourful-sunrise-over-sydney-600nw-1094901527.jpg"
+            alt="Img" class="img-fluid">
+            <div class="col-md-12">
+            <h4>
+              Australia
+            </h4>
+            <p>
+              Australia: Sun-kissed shores, ancient landscapes, and vibrant cities.
+               From the vast Outback to the Great Barrier Reef, its wonders captivate. 
+               Indigenous cultures enrich its tapestry, while diverse wildlife thrives in its unique habitats. 
+               
+            </p>
+            <i class="fa fa-star star-icon"></i>
+            <i class="fa fa-star star-icon"></i>
+            <i class="fa fa-star star-icon"></i>
+            <i class="fa fa-star star-icon"></i>
+            <i class="fa fa-star star-icon"></i><br>
+            <strong style="font-size: 20px;"><span>Price:</span><span style="color: goldenrod;font-weight: bold;">$750</span></strong><br>
+            <button class="bubble-btn">Book Now</button>
+          </div>
+          </div>
+        </div>
+        <div class="col-md-4 mt-2">
+          <div class="col-md-11 content">
+            <img
+            src="https://t4.ftcdn.net/jpg/01/09/60/11/360_F_109601187_QVo9iJLPJc3HqZOcgJBk4daB86hgdbdu.jpg"
+            alt="Img" class="img-fluid">
+            <div class="col-md-12">
+            <h4>
+              Brazil
+            </h4>
+            <p>
+              A kaleidoscope of biodiversity, samba rhythms, and iconic landmarks. 
+              From the Amazon rainforest to the beaches of Copacabana, its vibrant culture and natural 
+              wonders make it a destination like no other.
+            </p>
+            <i class="fa fa-star star-icon"></i>
+            <i class="fa fa-star star-icon"></i>
+            <i class="fa fa-star star-icon"></i>
+            <i class="fa fa-star star-icon"></i><br>
+            <strong style="font-size: 20px;"><span>Price:</span><span style="color: goldenrod;font-weight: bold;">$750</span></strong><br>
+            <button class="bubble-btn">Book Now</button>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 20px;"></div>
+      <div class="row">
+        <div class="col-md-4 mt-2">
+          <div class="col-md-11 content">
+            <img
+            src="https://media.istockphoto.com/id/496034328/photo/good-morning-moscow.jpg?s=612x612&w=0&k=20&c=QQtGSnSRDN50ie6C5kOfnxz38HTDOrIiNG21j1ecpyk="
+            alt="Img" class="img-fluid">
+            <div class="col-md-12">
+            <h4>
+              Russia
+            </h4>
+            <p>
+              A vast expanse of history, art, and intrigue. From the grandeur of Moscow's Red Square to the tranquility of Siberian landscapes, its mystique and resilience shape a nation of endless discovery.
+            </p>
+            <i class="fa fa-star star-icon"></i>
+            <i class="fa fa-star star-icon"></i>
+            <i class="fa fa-star star-icon"></i>
+            <i class="fa fa-star star-icon"></i>
+            <i class="fa fa-star star-icon"></i><br>
+            <strong style="font-size: 20px;"><span>Price:</span><span style="color: goldenrod;font-weight: bold;">$750</span></strong><br>
+            <button class="bubble-btn">Book Now</button>
+          </div>
+          </div>
+
+        </div>
+        <div class="col-md-4 mt-2">
+<div class="col-md-11 content">
+            <img
+            src="https://daily.jstor.org/wp-content/uploads/2023/08/cape_town_south_africa_1050x700.jpg"
+            alt="Img" class="img-fluid">
+            <div class="col-md-12">
+            <h4>
+              South Africa
+            </h4>
+            <p>
+              A land of diverse landscapes, cultures, and wildlife. From the iconic 
+              Table Mountain to the sprawling savannas of Kruger National Park, 
+              its beauty and heritage enchant visitors
+            </p>
+            <i class="fa fa-star star-icon"></i>
+            <i class="fa fa-star star-icon"></i>
+            <i class="fa fa-star star-icon"></i>
+            <i class="fa fa-star star-icon"></i>
+            <i class="fa fa-star star-icon"></i><br>
+            <strong style="font-size: 20px;"><span>Price:</span><span style="color: goldenrod;font-weight: bold;">$750</span></strong><br>
+            <button class="bubble-btn">Book Now</button>
+          </div>
+          </div>
+        </div>
+        <div class="col-md-4 mt-2">
+          <div class="col-md-11 content">
+            <img
+            src="https://cdn.kimkim.com/files/a/content_articles/featured_photos/0e6ff459939c095e91c6f32be8b77671cf3d9f14/big-0f20b3176412a8cb3688ba14f5f547d8.jpg"
+            alt="Img" class="img-fluid">
+            <div class="col-md-12">
+            <h4>
+              France
+            </h4>
+            <p>
+              A timeless blend of art, cuisine, and romance. From the historic streets of Paris to the sun-kissed vineyards of Bordeaux, its cultural riches and exquisite landscapes inspire wanderlust.
+            </p>
+            <i class="fa fa-star star-icon"></i>
+            <i class="fa fa-star star-icon"></i>
+            <i class="fa fa-star star-icon"></i>
+            <i class="fa fa-star star-icon"></i>
+            <i class="fa fa-star star-icon"></i><br>
+            <strong style="font-size: 20px;"><span>Price:</span><span style="color: goldenrod;font-weight: bold;">$750</span></strong><br>
+            <button class="bubble-btn">Book Now</button>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 30px;"></div>
+    </div>
+  </div>
+
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h3>Contact Us</h3>
+          <p><i class="fas fa-envelope"></i> Email: info@travelwebsite.com</p>
+          <p><i class="fas fa-phone"></i> Phone: +91 8866749395</p>
+        </div>
+        <div class="col-md-4">
+          <h3>Follow Us</h3>
+          <p>Connect with us on social media:</p>
+          <ul class="list-unstyled">
+            <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
           </ul>
         </div>
-        <div class="form-inline">
-            <button class="btn btn-outline-success my-2 my-sm-0 NavBtn" type="submit">Sign in</button>
-            <div style="margin-left: 10px;"></div>
-            <button class="btn btn-outline-success my-2 my-sm-0 NavBtn" type="submit">Register</button>
-        </div>
-      </nav>
-    <!--  -->
-    <div class="container-fluid">
-        <div class="row">
-            <h1 class="col-md-12 Heading">Welcome to Bordeaux Travel Tours!</h1><br/><br/>
-            <div class="col-md-12 subHeading">
-                    Book for
-                <span id="word"></span>
+        <div class="col-md-4">
+          <h3>Subscribe to our TravelTour</h3>
+          <form>
+            <div class="form-group">
+              <input type="email" class="form-control" placeholder="Enter your email">
             </div>
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
         </div>
-        <div class="row V-Gap"></div>
-        <div class="row">
-            <div class="col-md-3"></div>
-            <div class="col-md-6 Border-Shadow">
-                <img class="col-md-10" src="daniela-cuevas-t7YycgAoVSw-unsplash.jpg" class="Img"/><br>
-                <button class="bubble-btn">Book Your Ticket</button>
-                <p>
-                  We are in this business for more than ten years. Customers satisfied with reliable & excellent customer 
-                  support. This is the main reason why customers keep coming back to us and put trust in our products. 
-                  And most importantly, we will never abandon our customers.
-                </p>
-            </div>
-            <div class="col-md-3"></div>
-        </div>
+      </div>
+      <hr>
+      <p class="text-center">© 2024 TravelTour. All rights reserved.</p>
     </div>
+  </footer>
+
 </body>
+
 </html>
 
 
 <script>
-    var words = ['United States', 'India', 'France', 'Germany'];
-    var index = 0;
-    function changeWord(wordElement) {
-      wordElement.textContent = words[index];
-      index = (index + 1) % words.length; 
+  var words = ['India', 'Japan', 'France', 'Germany','Canada','Australia','Brazil','Russia','And', 'South Africa'];
+  var index = 0;
+  function changeWord(wordElement) {
+    wordElement.textContent = words[index];
+    index = (index + 1) % words.length;
+  }
+
+  var wordElement = document.getElementById('word');
+  setInterval(function () {
+    changeWord(wordElement);
+  }, 1000);
+  document.addEventListener("DOMContentLoaded", function () {
+    var introText = document.getElementById('intro-text');
+    introText.classList.add('intro');
+  });
+
+  function toggleEndDate() {
+      var startDateInput = document.getElementById('fromDate');
+      var endDateInput = document.getElementById('toDate');
+      if (startDateInput.value !== '') {
+        endDateInput.disabled = false;
+        endDateInput.min = startDateInput.value;
+      } else {
+        endDateInput.disabled = true;
+        endDateInput.value = '';
+      }
     }
-  
-    var wordElement = document.getElementById('word');
-    setInterval(function() {
-      changeWord(wordElement);
-    }, 1000);
-  </script>
+    document.getElementById('fromDate').addEventListener('change', toggleEndDate);
+
+    function checkForm() {
+    var whereTo = document.getElementById('whereTo').value;
+    var howMany = document.getElementById('howMany').value;
+    var fromDate = document.getElementById('fromDate').value;
+    var toDate = document.getElementById('toDate').value;
+    var details = document.getElementById('exampleFormControlTextarea1').value;
+
+    if (whereTo !== '' && howMany !== '' && fromDate !== '' && toDate !== '' && details !== '') {
+      // All required fields are filled, so show an alert message
+      alert('Booking Successful');
+    }
+  }
+
+  // Adding an event listener to the "Book Now" button
+  document.querySelector('.bubble-btn').addEventListener('click', checkForm);
+</script>

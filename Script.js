@@ -8,3 +8,4 @@ var wordElement = document.getElementById('word');
 setInterval(function() {
   changeWord(wordElement);
 }, 1000);
+
