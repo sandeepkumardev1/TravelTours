@@ -199,3 +199,9 @@ body{
 .justify-content-between {
   justify-content: space-between !important;
 }
+#loginForm{
+  text-align: left;
+}
+#registerForm{
+  text-align: left;
+}
