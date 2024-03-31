@@ -16,25 +16,71 @@
   <link rel="stylesheet" type="text/css" href="Style.css">
 </head>
 <body>
+
+ <!-- nav -->
+ <nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="index.html"><img src="travel-tour-logo.png" alt="Bordeaux" height="18px" /></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Book</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Services</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Packages
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">United States</a>
+            <a class="dropdown-item" href="#">India</a>
+            <a class="dropdown-item" href="#">France</a>
+            <a class="dropdown-item" href="#">Germany</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About Us</a>
+        </li>
+      </ul>
+    </div>
+    <div class="form-inline">
+      <a class="btn btn-outline-success my-2 my-sm-0 NavBtn" type="submit" href="Login.html">Sign in</a>
+      <div style="margin-left: 10px;"></div>
+      <a class="btn btn-outline-success my-2 my-sm-0 NavBtn" type="submit" href="Register.html">Register</a>
+    </div>
+  </nav>
+  <!--  -->
+
+
     <div class="container">
+        <div class="row" style="height: 20px;"></div>
         <div class="row">
             <div class="col-md-2"></div>
             <div class="col-md-8 mainrow Border-Shadow text-dark">
                 <form id="registerForm">
                     <label for="fullName">Full Name:</label>
-                    <input type="text" id="fullName" name="fullName">
+                    <input type="text" id="fullName" name="fullName" required>
             
                     <label for="contact">Contact Number:</label>
-                    <input type="tel" id="contact" name="contact" pattern="[0-9]{10}" title="Please enter a valid 10-digit phone number">
+                    <input type="tel" id="contact" name="contact" required pattern="[0-9]{10}" title="Please enter a valid 10-digit phone number">
             
                     <label for="dob">Date of Birth:</label>
-                    <input type="date" id="dob" name="dob">
+                    <input type="date" id="dob" name="dob" required>
             
                     <label for="email">Email:</label>
-                    <input type="email" id="email" name="email">
+                    <input type="email" id="email" name="email" required>
             
                     <label for="password">Password:</label>
-                    <input type="password" id="password" name="password">
+                    <input type="password" id="password" name="password" required>
                     <div class="row">
                         <div class="col-md-1">
                             <div class="col-md-12" style="height: 15px;"></div>
@@ -61,6 +107,7 @@
             </div>
             <div class="col-md-2"></div>
         </div>
+        <div class="row" style="height: 20px;"></div>
     </div>
 
 
@@ -136,12 +183,18 @@
             document.getElementById('gender').nextSibling.textContent = 'Gender is required';
             return;
         }
-        console.log('Full Name:', fullName);
-        console.log('Contact Number:', contact);
-        console.log('Date of Birth:', dob);
-        console.log('Email:', email);
-        console.log('Password:', password);
-        console.log('Gender:', gender.value);
+        if (window.confirm('Registered successfully! Click OK to continue.')) {
+            // Redirect to index.html after user clicks OK
+            window.location.href = 'index.html';
+            
+            // Log registration details
+            console.log('Full Name:', fullName);
+            console.log('Contact Number:', contact);
+            console.log('Date of Birth:', dob);
+            console.log('Email:', email);
+            console.log('Password:', password);
+            console.log('Gender:', gender.value);
+        }
     });
 </script>
 
